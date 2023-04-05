@@ -41,26 +41,32 @@ nav {
 }
 
 #nav-items li {
-    margin-right: 20px;
+    margin-right: 8rem;
 }
 
 .toggle {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    #nav-items {
-        display: none;
-        flex-direction: column;
-    }
-    #nav-items.show-items {
-        display: flex;
-    }
-    .toggle {
-        display: block;
-        cursor: pointer;
-    }
+/* Footer styles */
+
+footer {
+    background-color: #aacaf9;
+    color: #000;
+    padding: 60px 20px;
+    text-align: center;
 }
+
+footer h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+footer ul {
+    display: flex;
+}
+
+/* Home Page */
 
 /* Hero section styles */
 
@@ -195,20 +201,142 @@ nav {
     margin-top: 10px;
 }
 
-/* Footer styles */
 
-footer {
-    background-color: #aacaf9;
-    color: #000;
+/* About Page */
+
+.artist-about{
+    background-color: #7db6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-about img{
+    width: 20%;
+    height: 300px;
+    margin: 2rem 8rem 2rem 2rem;
+    border-radius: 25px;
+}
+
+.art-gallery-about{
+    background-color: #bed1ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-gallery-about img{
+    width: 100%;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.art-gallery-about-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.art-gallery-about h3{
+    margin: 2rem;
+}
+
+.art-gallery-about-detail p{
+    margin: 1rem;
+}
+
+
+/* Media Page */
+
+.hero-media {
+    background-color: #7db6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-media img{
+    width: 70%;
+    height: 500px;
+    margin: 2rem;
+    border-radius: 25px;
+}
+
+.hero-media p {
+    font-size: 28px;
+    margin-bottom: 40px;
+    position: absolute;
+    z-index: 1;
+    color:#46206c;
+    top: 70%;
+    left: 25%;
+}
+
+.hero-media-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero-media-button button {
+    background-color: #0072C6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-media-button button:hover {
+    background-color: #005ea1;
+}
+
+/* Popular artworks section styles */
+
+.media-gallery {
     padding: 60px 20px;
     text-align: center;
+    background-color: #bed1ed;
 }
 
-footer h3 {
+.media-gallery h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    text-decoration: underline;
 }
 
-footer ul {
+.media-gallery-collection {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.media-gallery-collection figure {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in;
+}
+
+.media-gallery-collection figure:hover {
+    transform: scale(1.1);
+  }
+
+.media-gallery-collection img {
+    display: block;
+    width: 20rem;
+    height: 350px;
+}
+
+.media-gallery-collection figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }
