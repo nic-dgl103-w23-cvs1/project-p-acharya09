@@ -8,7 +8,7 @@
         <title>Samrat Art Gallery | Sketch Artworks</title>
         <meta name="title" content="Samrat Art Gallery | Contact Us">
         <meta name="description" content="Find sketches by Samrat Subedi which captures the essence of the moment">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="images/favicon.png"> 
         <!-- 
             change fav icon
@@ -20,17 +20,19 @@
         <!-- Header -->
         <header>
             <!-- Logo -->
-            <img>
+            <h1>Samrat Art Gallery</h1>
             <!-- Navigation Menu -->
             <nav>
                 <ul id="nav-items">
-                    <li>Nav 1</li>
-                    <li>Nav 2</li>
-                    <li>Nav 3</li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Media</li>
+                    <li>Contact</li>
                 </ul>
+                <div>
+                    <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+                </div>
             </nav>
-            <!-- Search Bar -->
-            <input placeholder="Search"> 
         </header>
 
 
@@ -38,26 +40,40 @@
         <section class="contact-us">
             <!-- Contact Detail -->
             <div class="contact-us-detail">
-                <h3>About Artist</h3>
+                <h3>Contact Us</h3>
                 <ul>
                     <li>Phone: 1234567890</li>
                     <li>Email: mycontact@contact.com</li>
                     <li>Address: Kathmandu, Nepal</li>
                 </ul>
             </div>
-            <img>
+            <img title="Location" src="./images/maps.png">    
         </section>
 
 
         <!-- Contact Message Section -->
-        <section class="art-gallery-about">
-            <h4>Contact Us</h4>
-            <form type="submit">
-                <input name="message" type="text">
-                <input name="email" type="email">
-                <input name="phone" type="text">
-                <textarea>All the input messages here</textarea>
-                <button>Submit</button>
+        <section class="contact-us-message">
+            <h4>Send Us Your Message</h4>
+            <form>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                  </div>
+                  <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                  </div>
+                  <div class="form-row">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+                  </div>
+                  <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <input class="button-submit" type="submit" value="Submit">
+                  </div>
             </form>
         </section>
 

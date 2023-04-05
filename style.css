@@ -133,28 +133,28 @@ footer ul {
     text-decoration: underline;
 }
 
-.popular-art-figure {
+.suggested-art-detail {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.popular-art-figure figure {
+.suggested-art-detail figure {
     margin-bottom: 40px;
     transition: transform 0.3s ease-in;
 }
 
-.popular-art-figure figure:hover {
+.suggested-art-detail figure:hover {
     transform: scale(1.1);
   }
 
-.popular-art-figure img {
+.suggested-art-detail img {
     display: block;
     width: 20rem;
     height: 350px;
 }
 
-.popular-art-figure figcaption {
+.suggested-art-detail figcaption {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
@@ -336,6 +336,169 @@ footer ul {
 }
 
 .media-gallery-collection figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Contact Page */
+
+.contact-us{
+    background-color: #7db6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us img{
+    width: 40%;
+    height: 450px;
+    margin: 2rem 2rem 2rem 8rem;
+    border-radius: 25px;
+}
+
+.contact-us-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+}
+
+.contact-us-detail li{
+    line-height: 1.8;
+}
+
+.contact-us-detail h3{
+    margin-bottom: 2rem;
+}
+
+.contact-us-message{
+    background-color: #bed1ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-message form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: #5bb7f8;
+    margin: 1rem;
+    width: 50%;
+}
+
+.contact-us-message h4 {
+    margin: 1rem;
+}
+
+.form-row{
+    margin: 1.5rem;
+}
+
+.form-row input{
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 2rem;
+    height: 40px;
+}
+
+.form-row textarea{
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 2rem;
+    height: 150px;
+}
+
+.button-submit {
+    background-color: #0072C6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-submit:hover {
+    background-color: #005ea1;
+}
+
+
+/* Art-Detail Page */
+
+.art-detail{
+    background-color: #7db6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-detail img{
+    width: 40%;
+    height: 450px;
+    margin: 2rem 2rem 2rem 8rem;
+    border-radius: 25px;
+}
+
+.art-detail-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+}
+
+.art-detail-section li{
+    line-height: 1.8;
+}
+
+.art-detail-section h3{
+    margin-bottom: 2rem;
+}
+
+/* Suggested art */
+.suggested {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #bed1ed;
+}
+
+.suggested h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.suggested-art-detail {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.suggested-art-detail figure {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in;
+}
+
+.suggested-art-detail figure:hover {
+    transform: scale(1.1);
+  }
+
+.suggested-art-detail img {
+    display: block;
+    width: 20rem;
+    height: 350px;
+}
+
+.suggested-art-detail figcaption {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
