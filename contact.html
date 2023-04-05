@@ -23,7 +23,7 @@
             <img>
             <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul id="nav-items">
                     <li>Nav 1</li>
                     <li>Nav 2</li>
                     <li>Nav 3</li>
@@ -71,6 +71,13 @@
               <li>Address: Kathmandu, Nepal</li>
             </ul>
         </footer>
+
+        <script>
+            function showNav() {
+              var element = document.getElementById("nav-items");
+              element.classList.toggle("show-items");
+            }
+          </script>
 
     </body>
 </html>

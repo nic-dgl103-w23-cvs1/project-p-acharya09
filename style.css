@@ -1,0 +1,214 @@
+/* Reset all CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #aacaf9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav-items {
+    display: flex;
+}
+
+#nav-items li {
+    margin-right: 20px;
+}
+
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-items {
+        display: none;
+        flex-direction: column;
+    }
+    #nav-items.show-items {
+        display: flex;
+    }
+    .toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Hero section styles */
+
+.hero {
+    background-color: #7db6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img{
+    width: 70%;
+    height: 500px;
+    margin: 2rem;
+    border-radius: 25px;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-bottom: 40px;
+    position: absolute;
+    z-index: 1;
+    color:#46206c;
+    top: 70%;
+    left: 25%;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero-button button {
+    background-color: #0072C6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-button button:hover {
+    background-color: #005ea1;
+}
+
+/* Popular artworks section styles */
+
+.popular {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #bed1ed;
+}
+
+.popular h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.popular-art-figure {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular-art-figure figure {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in;
+}
+
+.popular-art-figure figure:hover {
+    transform: scale(1.1);
+  }
+
+.popular-art-figure img {
+    display: block;
+    width: 20rem;
+    height: 350px;
+}
+
+.popular-art-figure figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Latest artworks section styles */
+
+.latest {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #7db6ee;
+}
+
+.latest h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.latest-art-figure {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latest-art-figure figure {
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in;
+}
+
+.latest-art-figure figure:hover {
+    transform: scale(1.1);
+  }
+
+.latest-art-figure img {
+    display: block;
+    width: 20rem;
+    height: 350px;
+}
+
+.latest-art-figure figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #aacaf9;
+    color: #000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+footer ul {
+    display: flex;
+}

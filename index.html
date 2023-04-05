@@ -8,8 +8,11 @@
         <title>Samrat Art Gallery | Sketch Artworks</title>
         <meta name="title" content="Samrat Art Gallery | Sketch Artworks">
         <meta name="description" content="Sketches by Samrat Subedi which captures the essence of the moment">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="images/favicon.png"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        <script src="https://kit.fontawesome.com/6b52140ca6.js" crossorigin="anonymous"></script>
+
         <!-- 
             change fav icon
         -->
@@ -20,29 +23,32 @@
         <!-- Header -->
         <header>
             <!-- Logo -->
-            <img>
+            <h1>Samrat Art Gallery</h1>
             <!-- Navigation Menu -->
             <nav>
-                <ul>
-                    <li>Nav 1</li>
-                    <li>Nav 2</li>
-                    <li>Nav 3</li>
+                <ul id="nav-items">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Media</li>
+                    <li>Contact</li>
                 </ul>
+                <div>
+                    <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+                </div>
             </nav>
-            <!-- Search Bar -->
-            <input placeholder="Search"> 
         </header>
 
 
         <!-- Hero Section -->
         <section class="hero">
-            <!-- Image Text -->
-            <p>Lorem Ipsum</p>
-            <!-- Buttons for hero section -->
-            <div class="hero-button">
-                <button>Explore</button>
-                <button>Contact Us</button>
-            </div>
+                <img src="./images/background.jpg" alt="hero image">
+                <!-- Image Text -->
+                <p>Captures the essence of the moment</p>
+                <!-- Buttons for hero section -->
+                <div class="hero-button">
+                    <button class="primary-button">Explore</button>
+                    <button class="secondary-button">Contact Us</button>
+                </div>
         </section>
 
 
@@ -51,20 +57,24 @@
             <h2>Popular</h2>
             <div class="popular-art-figure">
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Nabin K Bhattarai" src="./images/nkb.jpeg">
+                    <figcaption>Nabin K Bhattarai</figcaption>
+                    <p>Popular Nepali Singer</p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Old Man" src="./images/ol.jpeg">
+                    <figcaption>Man</figcaption>
+                    <p>Lorem Ipsum </p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Horse" src="./images/horse.jpeg">
+                    <figcaption>Horse</figcaption>
+                    <p>Lorem Ipsum </p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Man Behind Wall" src="./images/mbtw.jpeg">
+                    <figcaption>Man Behind Wall</figcaption>
+                    <p>Man Behind Wall</p>
                 </figure>
             </div>
         </section>
@@ -72,23 +82,27 @@
 
         <!-- Section Latest Artworks -->
         <section class="latest">
-            <h2>Popular</h2>
+            <h2>Latest</h2>
             <div class="latest-art-figure">
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Thanos" src="./images/thanos.jpeg">
+                    <figcaption>Thanos</figcaption>
+                    <p>Marvel Cinematic Universe</p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Wall Cry" src="./images/wallcry.jpeg">
+                    <figcaption>Wall Cry</figcaption>
+                    <p>Lorem Ipsum</p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Monalisa" src="./images/monalisa.jpeg">
+                    <figcaption>Monalisa</figcaption>
+                    <p>Famous Painting</p>
                 </figure>
                 <figure>
-                    <img title="Item 1">
-                    <figcaption></figcaption>
+                    <img title="Art" src="./images/art.jpeg">
+                    <figcaption>Art</figcaption>
+                    <p>Lorem Ipsum</p>
                 </figure>
             </div>
         </section>
@@ -104,5 +118,11 @@
             </ul>
         </footer>
 
+        <script>
+            function showNav() {
+              var element = document.getElementById("nav-items");
+              element.classList.toggle("show-items");
+            }
+        </script>
     </body>
 </html>
